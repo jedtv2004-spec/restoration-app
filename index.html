@@ -10,8 +10,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="متابعة الترميم">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1041,7 +1041,7 @@ function pinFormHtml() {
 
 /* =========================== الدخول والإعداد =========================== */
 function setupView() {
-  return `<div class="login"><div class="brand"><img src="icons/icon-192.png" alt=""><h1>متابعة ترميم الاستراحة</h1></div>
+  return `<div class="login"><div class="brand"><img src="icon-192.png" alt=""><h1>متابعة ترميم الاستراحة</h1></div>
     <div class="card"><b>ربط التطبيق بالجدول</b>
       <p class="small muted">الصق رابط تطبيق الويب من Apps Script (ينتهي بـ ‎/exec). الأفضل وضعه في ملف config.js حتى لا يُطلب من كل جهاز.</p>
       <form data-form="setup"><div class="field"><input name="url" dir="ltr" required placeholder="https://script.google.com/macros/s/…/exec"></div>
@@ -1053,7 +1053,7 @@ async function renderLogin() {
   const root = $('#app');
   const paint = () => {
     const ls = loginState;
-    root.innerHTML = `<div class="login"><div class="brand"><img src="icons/icon-192.png" alt=""><h1>متابعة ترميم الاستراحة</h1></div>
+    root.innerHTML = `<div class="login"><div class="brand"><img src="icon-192.png" alt=""><h1>متابعة ترميم الاستراحة</h1></div>
       ${window.DEMO_NOTE ? `<div class="card small" style="width:100%;max-width:400px;background:var(--amber-bg);border-color:#f3d39a">${window.DEMO_NOTE}</div>` : ''}
       <div class="card">
         ${ls.users === null ? '<div class="empty"><span class="loader" style="display:inline-block"></span><br>جارٍ التحميل…</div>'
